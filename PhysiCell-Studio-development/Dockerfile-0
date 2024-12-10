@@ -1,0 +1,15 @@
+FROM python:latest
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y \
+    qtbase5-dev \
+    python3-pyqt5 \
+    python3-matplotlib 
+
+COPY requirements.txt requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+CMD ["python", "bin/studio.py"]
