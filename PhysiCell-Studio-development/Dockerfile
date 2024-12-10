@@ -13,12 +13,12 @@ RUN apt-get update && apt-get install -y \
     libxcb-icccm4 \
     libxcb-image0 \
     libxcb-render-util0 \
-    libxext6 libx11-6 ffmpeg
+    libxext6 libx11-6 libgl1 libglib2.0-0 libxrender1
 
 
 # Install PySide6 using pip
 RUN pip install PySide6 numpy matplotlib scipy pandas
-# RUN pip install --no-cache-dir -r requirements.txt
+# RUN pip install --no-cache-dir -r requirements.txtS
 
 # Copy your application code into the container
 COPY . .
