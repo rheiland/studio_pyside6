@@ -1,0 +1,17 @@
+name: studio
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - paraview 
+  - python
+  - PySide6-sip
+  - matplotlib
+  - scipy
+  - pandas
+  - anndata
+  - pip
+  - pip:
+    - simulariumio[physicell]
+    - requests
+
