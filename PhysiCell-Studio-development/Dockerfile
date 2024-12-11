@@ -13,7 +13,14 @@ RUN apt-get update && apt-get install -y \
     libxcb-icccm4 \
     libxcb-image0 \
     libxcb-render-util0 \
-    libxext6 libx11-6 libgl1 libglib2.0-0 libxrender1
+    libxext6 libx11-6 libgl1 libglib2.0-0 libxrender1 \
+    libegl1 libxkbcommon0 libdbus-1-3 \    
+    qtbase5-dev \
+    python3-pyqt5 \
+    python3-matplotlib \
+    xvfb
+
+
 
 
 # Install PySide6 using pip
